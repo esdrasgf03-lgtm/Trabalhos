@@ -4,19 +4,18 @@
 <meta charset="utf-8">
 <title>Resumo 3 – Física I</title>
 <style>
-  @page { size: A4; margin: 2.2cm 2.2cm 2.2cm 2.5cm; }
+  @page { size: A4; margin: 2cm 2.2cm 2cm 2.5cm; }
   body { font-family: "DejaVu Serif", "Times New Roman", serif; font-size: 11.5pt; line-height: 1.5; color: #111; text-align: justify; }
-  header { text-align: center; margin-bottom: 18pt; }
-  header h1 { font-size: 15pt; margin: 0 0 4pt; }
+  header { text-align: center; margin-bottom: 14pt; }
+  header h1 { font-size: 14.5pt; margin: 0 0 4pt; }
   header p { margin: 2pt 0; font-size: 10.5pt; }
-  h2 { font-size: 13pt; margin: 16pt 0 6pt; border-bottom: 1px solid #999; padding-bottom: 2pt; page-break-after: avoid; }
-  h3 { font-size: 11.5pt; margin: 10pt 0 4pt; page-break-after: avoid; }
+  h2 { font-size: 12.5pt; margin: 14pt 0 5pt; border-bottom: 1px solid #999; padding-bottom: 2pt; page-break-after: avoid; }
   p { margin: 5pt 0; }
-  ul { margin: 4pt 0 4pt 0; padding-left: 20pt; }
+  ul { margin: 4pt 0; padding-left: 20pt; }
   li { margin: 3pt 0; }
-  .eq { text-align: center; font-style: italic; margin: 7pt 0; font-size: 12pt; page-break-inside: avoid; }
+  .eq { text-align: center; font-style: italic; margin: 6pt 0; font-size: 12pt; page-break-inside: avoid; }
   .v { font-weight: bold; font-style: normal; }
-  .ref { font-size: 10pt; margin-top: 20pt; border-top: 1px solid #999; padding-top: 6pt; text-align: left; }
+  .ref { font-size: 10pt; margin-top: 16pt; border-top: 1px solid #999; padding-top: 6pt; text-align: left; }
 </style>
 </head>
 <body>
@@ -27,79 +26,40 @@
   <p>Baseado em Halliday, Resnick e Walker, <i>Fundamentos de Física</i>, vol. 1 (Caps. 9, 10 e 11)</p>
 </header>
 
-<h2>1. Quantidade de Movimento (Momento Linear)</h2>
-<p>O momento linear de uma partícula é a grandeza vetorial obtida pelo produto de sua massa pela sua velocidade. Ele tem sempre a mesma direção e o mesmo sentido da velocidade, e sua unidade no SI é o kg·m/s.</p>
-<p class="eq"><span class="v">p</span> = m<span class="v">v</span></p>
-<p>Halliday mostra que a Segunda Lei de Newton foi originalmente formulada em termos do momento: a força resultante sobre uma partícula é igual à taxa de variação do seu momento linear no tempo. A forma F = ma é um caso particular dessa lei, válido quando a massa é constante.</p>
-<p class="eq"><span class="v">F</span><sub>res</sub> = d<span class="v">p</span>/dt</p>
-<p>Para um sistema de partículas, o momento total <span class="v">P</span> é a soma vetorial dos momentos individuais e equivale à massa total multiplicada pela velocidade do centro de massa (<span class="v">P</span> = M<span class="v">v</span><sub>CM</sub>). Apenas as forças externas conseguem alterar o momento total do sistema: <span class="v">F</span><sub>res,ext</sub> = d<span class="v">P</span>/dt.</p>
-
-<h2>2. Impulso</h2>
-<p>Quando uma força atua sobre um corpo durante certo intervalo de tempo, como no instante de uma batida ou de um chute, ela transfere momento linear a esse corpo. Essa transferência recebe o nome de impulso:</p>
-<p class="eq"><span class="v">J</span> = ∫ <span class="v">F</span>(t) dt &nbsp;(de t<sub>i</sub> a t<sub>f</sub>)</p>
-<p>Em um gráfico da força em função do tempo, o módulo do impulso corresponde à área sob a curva. Como as forças de colisão costumam variar muito rapidamente, é comum trabalhar com a força média, de modo que J = F<sub>méd</sub>·Δt.</p>
-<p>O resultado mais importante desta seção é o <b>Teorema do Impulso e Momento Linear</b>: o impulso aplicado a um corpo é igual à variação do seu momento linear.</p>
+<h2>1. Quantidade de Movimento e Impulso</h2>
+<p>A quantidade de movimento (momento linear) é o vetor <span class="v">p</span> = m<span class="v">v</span>, medido em kg·m/s. Halliday apresenta a Segunda Lei de Newton na forma <span class="v">F</span><sub>res</sub> = d<span class="v">p</span>/dt: a força resultante é a taxa de variação do momento no tempo.</p>
+<p>Quando uma força atua durante um intervalo de tempo, ela transfere momento ao corpo. Essa transferência é o <b>impulso</b>, <span class="v">J</span> = ∫<span class="v">F</span>dt, que corresponde à área sob o gráfico F × t (ou J = F<sub>méd</sub>·Δt). O <b>Teorema do Impulso e Momento Linear</b> afirma que:</p>
 <p class="eq"><span class="v">J</span> = Δ<span class="v">p</span> = <span class="v">p</span><sub>f</sub> − <span class="v">p</span><sub>i</sub></p>
-<p>Esse teorema explica situações do cotidiano. Para uma mesma variação de momento, aumentar o tempo de contato diminui a força média. É por isso que airbags, luvas de boxe, colchões de ginástica e o ato de flexionar os joelhos ao aterrissar de um salto reduzem o impacto sofrido.</p>
-<p>Halliday também analisa uma série de colisões, como uma sequência de projéteis atingindo um alvo. Se n projéteis de massa m atingem o alvo durante um intervalo Δt, cada um com variação de velocidade Δv, a força média sobre o alvo é F<sub>méd</sub> = −(n/Δt)·m·Δv.</p>
+<p>Por isso, aumentar o tempo de contato reduz a força média do impacto. É o que fazem o airbag, a luva de boxe e a flexão dos joelhos ao saltar.</p>
 
-<h2>3. Conservação do Momento Linear</h2>
-<p>Se um sistema é <b>fechado</b> (nenhuma partícula entra ou sai) e <b>isolado</b> (a força externa resultante é nula), seu momento linear total permanece constante, qualquer que seja a interação entre suas partes:</p>
-<p class="eq"><span class="v">P</span><sub>inicial</sub> = <span class="v">P</span><sub>final</sub></p>
-<p>Isso ocorre porque as forças internas surgem aos pares de ação e reação (Terceira Lei de Newton) e se anulam na soma. Por ser uma lei vetorial, a conservação pode valer em apenas uma direção: se a força externa for nula somente na horizontal, por exemplo, apenas a componente horizontal do momento se conserva.</p>
+<h2>2. Conservação do Momento Linear</h2>
+<p>Em um sistema fechado e isolado (força externa resultante nula), o momento total se conserva: <span class="v">P</span><sub>inicial</sub> = <span class="v">P</span><sub>final</sub>. As forças internas se anulam aos pares (3ª Lei de Newton) e não alteram o momento total. A conservação pode valer em apenas um eixo, quando a força externa é nula somente naquela direção.</p>
 
-<h2>4. Colisões</h2>
-<p>Uma colisão é um evento isolado no qual dois ou mais corpos exercem forças intensas uns sobre os outros durante um intervalo de tempo muito curto. Nesse intervalo as forças internas são muito maiores que as externas, e por isso <b>o momento linear total sempre se conserva em uma colisão</b>. O que distingue os tipos de colisão é o comportamento da energia cinética:</p>
+<h2>3. Colisões e Colisão Elástica</h2>
+<p>Numa colisão, as forças internas são intensas e muito breves, então <b>o momento total sempre se conserva</b>. A diferença entre os tipos de colisão está na energia cinética:</p>
 <ul>
-  <li><b>Colisão elástica:</b> conserva o momento linear e também a energia cinética total do sistema.</li>
-  <li><b>Colisão inelástica:</b> conserva o momento linear, mas parte da energia cinética é convertida em outras formas, como calor, som e deformação.</li>
-  <li><b>Colisão perfeitamente inelástica:</b> os corpos permanecem unidos após o choque e a perda de energia cinética é a maior possível. Nesse caso, m<sub>1</sub>v<sub>1i</sub> + m<sub>2</sub>v<sub>2i</sub> = (m<sub>1</sub> + m<sub>2</sub>)V.</li>
+  <li><b>Elástica:</b> a energia cinética também se conserva.</li>
+  <li><b>Inelástica:</b> parte da energia cinética se perde (calor, som, deformação).</li>
+  <li><b>Perfeitamente inelástica:</b> os corpos ficam unidos, com perda máxima de energia.</li>
 </ul>
-
-<h3>4.1 Colisão Elástica em Uma Dimensão</h3>
-<p>Em uma colisão elástica unidimensional, duas equações de conservação valem ao mesmo tempo, uma para o momento linear e outra para a energia cinética:</p>
-<p class="eq">m<sub>1</sub>v<sub>1i</sub> + m<sub>2</sub>v<sub>2i</sub> = m<sub>1</sub>v<sub>1f</sub> + m<sub>2</sub>v<sub>2f</sub></p>
-<p class="eq">½m<sub>1</sub>v<sub>1i</sub>² + ½m<sub>2</sub>v<sub>2i</sub>² = ½m<sub>1</sub>v<sub>1f</sub>² + ½m<sub>2</sub>v<sub>2f</sub>²</p>
-<p>Quando o alvo está inicialmente em repouso (v<sub>2i</sub> = 0), a resolução desse sistema fornece as velocidades finais:</p>
-<p class="eq">v<sub>1f</sub> = [(m<sub>1</sub> − m<sub>2</sub>)/(m<sub>1</sub> + m<sub>2</sub>)]·v<sub>1i</sub> &nbsp;&nbsp;&nbsp; e &nbsp;&nbsp;&nbsp; v<sub>2f</sub> = [2m<sub>1</sub>/(m<sub>1</sub> + m<sub>2</sub>)]·v<sub>1i</sub></p>
-<p>Halliday destaca três casos particulares:</p>
+<p>Na <b>colisão elástica unidimensional</b>, valem ao mesmo tempo a conservação do momento e a da energia cinética:</p>
+<p class="eq">m<sub>1</sub>v<sub>1i</sub> + m<sub>2</sub>v<sub>2i</sub> = m<sub>1</sub>v<sub>1f</sub> + m<sub>2</sub>v<sub>2f</sub> &nbsp;&nbsp;e&nbsp;&nbsp; ½m<sub>1</sub>v<sub>1i</sub>² + ½m<sub>2</sub>v<sub>2i</sub>² = ½m<sub>1</sub>v<sub>1f</sub>² + ½m<sub>2</sub>v<sub>2f</sub>²</p>
+<p>Com o alvo em repouso, as velocidades finais são:</p>
+<p class="eq">v<sub>1f</sub> = [(m<sub>1</sub> − m<sub>2</sub>)/(m<sub>1</sub> + m<sub>2</sub>)]·v<sub>1i</sub> &nbsp;&nbsp;&nbsp; v<sub>2f</sub> = [2m<sub>1</sub>/(m<sub>1</sub> + m<sub>2</sub>)]·v<sub>1i</sub></p>
 <ul>
-  <li><b>Massas iguais:</b> o projétil para (v<sub>1f</sub> = 0) e o alvo sai com a velocidade que o projétil tinha (v<sub>2f</sub> = v<sub>1i</sub>). Os corpos simplesmente trocam de velocidade, como acontece com bolas de sinuca.</li>
-  <li><b>Alvo muito mais pesado</b> (m<sub>2</sub> ≫ m<sub>1</sub>): o projétil volta com praticamente a mesma velocidade (v<sub>1f</sub> ≈ −v<sub>1i</sub>) e o alvo quase não se move.</li>
-  <li><b>Projétil muito mais pesado</b> (m<sub>1</sub> ≫ m<sub>2</sub>): o projétil segue quase sem perder velocidade e o alvo é lançado com cerca do dobro dela (v<sub>2f</sub> ≈ 2v<sub>1i</sub>).</li>
+  <li><b>Massas iguais:</b> os corpos trocam de velocidade (como bolas de sinuca).</li>
+  <li><b>Alvo muito pesado:</b> o projétil volta com quase a mesma velocidade.</li>
+  <li><b>Projétil muito pesado:</b> segue quase sem perder velocidade, e o alvo sai com cerca do dobro dela.</li>
 </ul>
-<p>Quando o alvo também está em movimento, as velocidades finais passam a ser:</p>
-<p class="eq">v<sub>1f</sub> = [(m<sub>1</sub> − m<sub>2</sub>)/(m<sub>1</sub> + m<sub>2</sub>)]·v<sub>1i</sub> + [2m<sub>2</sub>/(m<sub>1</sub> + m<sub>2</sub>)]·v<sub>2i</sub></p>
-<p class="eq">v<sub>2f</sub> = [2m<sub>1</sub>/(m<sub>1</sub> + m<sub>2</sub>)]·v<sub>1i</sub> + [(m<sub>2</sub> − m<sub>1</sub>)/(m<sub>1</sub> + m<sub>2</sub>)]·v<sub>2i</sub></p>
-<p>Uma propriedade útil das colisões elásticas unidimensionais é que a velocidade relativa entre os corpos tem o mesmo módulo antes e depois do choque, mas com sentido invertido: v<sub>2f</sub> − v<sub>1f</sub> = −(v<sub>2i</sub> − v<sub>1i</sub>).</p>
+<p>Em duas dimensões, o momento se conserva separadamente nos eixos x e y.</p>
 
-<h3>4.2 Colisões em Duas Dimensões</h3>
-<p>Quando a colisão não é frontal, os corpos se desviam em ângulos diferentes e o momento se conserva separadamente em cada eixo. Para um alvo inicialmente parado, com ângulos de saída θ<sub>1</sub> e θ<sub>2</sub> em relação à direção inicial:</p>
-<ul>
-  <li><b>Eixo x:</b> m<sub>1</sub>v<sub>1i</sub> = m<sub>1</sub>v<sub>1f</sub> cos θ<sub>1</sub> + m<sub>2</sub>v<sub>2f</sub> cos θ<sub>2</sub></li>
-  <li><b>Eixo y:</b> 0 = −m<sub>1</sub>v<sub>1f</sub> sen θ<sub>1</sub> + m<sub>2</sub>v<sub>2f</sub> sen θ<sub>2</sub></li>
-</ul>
-<p>Se a colisão for elástica, a conservação da energia cinética fornece uma terceira equação.</p>
+<h2>4. Momento de uma Força (Torque)</h2>
+<p>O torque mede a capacidade de uma força de fazer um corpo girar em torno de um eixo. Ele depende da intensidade da força, do ponto de aplicação e da direção:</p>
+<p class="eq">τ = r·F·sen φ &nbsp;&nbsp;&nbsp;&nbsp; (forma vetorial: <span class="v">τ</span> = <span class="v">r</span> × <span class="v">F</span>)</p>
+<p>Aqui, r é a distância do eixo ao ponto de aplicação e φ é o ângulo entre <span class="v">r</span> e <span class="v">F</span>. De forma equivalente, τ = r<sub>⊥</sub>·F, em que r<sub>⊥</sub> é o <b>braço de alavanca</b>. A unidade é N·m. O torque é positivo no sentido anti-horário e negativo no horário.</p>
+<p>O torque é o análogo rotacional da força. A Segunda Lei de Newton para a rotação é τ<sub>res</sub> = I·α, em que o momento de inércia I faz o papel da massa. Também vale <span class="v">τ</span><sub>res</sub> = d<span class="v">L</span>/dt: sem torque externo, o momento angular se conserva.</p>
 
-<h2>5. Momento de uma Força (Torque)</h2>
-<p>O torque, ou momento de uma força, mede a capacidade que uma força tem de fazer um corpo girar em torno de um eixo. Ele não depende só da intensidade da força, mas também do ponto onde ela é aplicada e da sua direção. Empurrar uma porta perto das dobradiças, por exemplo, é bem mais difícil do que empurrá-la perto da maçaneta. Seu módulo é:</p>
-<p class="eq">τ = r·F·sen φ</p>
-<p>Aqui, r é a distância entre o eixo de rotação e o ponto de aplicação da força, e φ é o ângulo entre o vetor posição <span class="v">r</span> e a força <span class="v">F</span>. Halliday apresenta duas interpretações equivalentes dessa expressão:</p>
-<ul>
-  <li><b>τ = r·F<sub>t</sub>:</b> apenas a componente tangencial da força, F<sub>t</sub> = F sen φ, provoca rotação. A componente radial, que aponta para o eixo, não produz giro.</li>
-  <li><b>τ = r<sub>⊥</sub>·F:</b> r<sub>⊥</sub> = r sen φ é o <b>braço de alavanca</b>, a distância perpendicular entre o eixo e a linha de ação da força.</li>
-</ul>
-<p>A unidade do torque no SI é o newton-metro (N·m), que não deve ser confundido com o joule. Por convenção, o torque é <b>positivo</b> quando tende a girar o corpo no sentido anti-horário e <b>negativo</b> no sentido horário.</p>
-<p>No Capítulo 11, o torque é definido de forma vetorial, pelo produto vetorial entre o vetor posição e a força. Sua direção é perpendicular ao plano formado por <span class="v">r</span> e <span class="v">F</span> e é dada pela regra da mão direita:</p>
-<p class="eq"><span class="v">τ</span> = <span class="v">r</span> × <span class="v">F</span></p>
-<p>O torque desempenha na rotação o mesmo papel que a força desempenha na translação. Isso aparece na <b>Segunda Lei de Newton para a rotação</b>, em que o momento de inércia I faz o papel da massa e a aceleração angular α faz o papel da aceleração linear:</p>
-<p class="eq">τ<sub>res</sub> = I·α</p>
-<p>Por fim, assim como a força resultante é a taxa de variação do momento linear, o torque resultante é a taxa de variação do momento angular <span class="v">L</span> = <span class="v">r</span> × <span class="v">p</span>, ou seja, <span class="v">τ</span><sub>res</sub> = d<span class="v">L</span>/dt. Se o torque externo resultante for nulo, o momento angular se conserva. Assim, a mesma lógica de conservação estudada para o movimento de translação se estende ao movimento de rotação.</p>
-
-<h2>6. Considerações Finais</h2>
-<p>Os conteúdos deste resumo formam uma unidade. O momento linear descreve a "quantidade de movimento" de um corpo, e o impulso mostra como uma força aplicada durante um intervalo de tempo altera essa quantidade. A conservação do momento em sistemas isolados permite analisar colisões sem conhecer as forças internas, que são complicadas. Nas colisões elásticas, a conservação da energia cinética completa as equações necessárias para determinar as velocidades finais. O torque, por sua vez, leva essas ideias para a rotação, com relações análogas à Segunda Lei de Newton e à conservação do momento.</p>
-
-<p class="ref"><b>Referência:</b> HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. <i>Fundamentos de Física</i>, volume 1: Mecânica. Rio de Janeiro: LTC. Capítulo 9 (Centro de Massa e Momento Linear), Capítulo 10 (Rotação) e Capítulo 11 (Rolamento, Torque e Momento Angular).</p>
+<p class="ref"><b>Referência:</b> HALLIDAY, David; RESNICK, Robert; WALKER, Jearl. <i>Fundamentos de Física</i>, volume 1: Mecânica. Rio de Janeiro: LTC. Capítulos 9, 10 e 11.</p>
 
 </body>
 </html>
