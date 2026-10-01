@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Apostila de Geometria – CME-PMRR</title>
+<style>
+  @page { size: A4; margin: 1.8cm 2cm 1.8cm 2.2cm; }
+  body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; color: #111; }
+  h1 { font-size: 20pt; margin: 0 0 4pt; color: #1d3557; }
+  h2 { font-size: 14pt; color: #fff; background: #1d3557; padding: 4pt 8pt; margin: 18pt 0 8pt; page-break-after: avoid; }
+  h3 { font-size: 11.5pt; color: #1d3557; margin: 12pt 0 4pt; border-bottom: 1px solid #a8b3c4; padding-bottom: 1pt; page-break-after: avoid; }
+  p { margin: 4pt 0; text-align: justify; }
+  ul { margin: 3pt 0; padding-left: 18pt; }
+  li { margin: 2pt 0; }
+  .capa { text-align: center; padding-top: 4cm; page-break-after: always; }
+  .capa .sub { font-size: 12pt; color: #444; margin-top: 6pt; }
+  .capa .box { margin: 2.5cm auto 0; width: 80%; border: 2px solid #1d3557; padding: 12pt 16pt; text-align: left; font-size: 11pt; }
+  .f { background: #eef2f8; border-left: 4px solid #1d3557; padding: 5pt 10pt; margin: 6pt 0; page-break-inside: avoid; }
+  .f b { color: #1d3557; }
+  .eq { font-family: "DejaVu Serif", serif; font-style: italic; }
+  .dica { background: #fff6e0; border-left: 4px solid #e9a400; padding: 5pt 10pt; margin: 6pt 0; page-break-inside: avoid; }
+  .ex { background: #f3f9f1; border-left: 4px solid #3a8d3a; padding: 5pt 10pt; margin: 6pt 0; page-break-inside: avoid; }
+  .cai { font-size: 9pt; color: #555; font-style: italic; }
+  .fig { text-align: center; margin: 6pt 0; page-break-inside: avoid; }
+  .fig svg { max-width: 100%; }
+  .q { margin: 10pt 0; page-break-inside: avoid; }
+  .q .n { font-weight: bold; color: #1d3557; }
+  .q .alt { padding-left: 14pt; margin-top: 3pt; }
+  .q .alt span { display: inline-block; min-width: 30%; }
+  .gab p { margin: 5pt 0; }
+  .quebra { page-break-before: always; }
+  .mapa li { margin: 3pt 0; }
+</style>
+</head>
+<body>
+
+<div class="capa">
+  <h1>Apostila de Geometria</h1>
+  <div class="sub">Preparação para o Processo Seletivo CME-PMRR (Roraima)<br>Ingresso na 1ª série do Ensino Médio</div>
+  <div class="box">
+    <b>Como esta apostila foi feita:</b> analisei as 170 questões de Matemática das provas de 2016 a 2026 (10 provas). <b>85 delas, metade da prova, são de geometria.</b> Os capítulos seguem os assuntos que mais aparecem, e cada um indica as questões das provas em que o tema foi cobrado.<br><br>
+    <b>Conteúdo:</b><br>
+    1. Mapa do que cai na prova<br>
+    2. Ângulos, triângulos e congruência<br>
+    3. Teorema de Pitágoras<br>
+    4. Semelhança de triângulos e Teorema de Tales<br>
+    5. Relações métricas no triângulo retângulo<br>
+    6. Trigonometria no triângulo retângulo<br>
+    7. Polígonos: perímetros e áreas<br>
+    8. Circunferência e círculo<br>
+    9. Outras geometrias: espacial e plano cartesiano<br>
+    10. Dicas de prova<br>
+    11. Lista de 20 exercícios (questões das provas)<br>
+    12. Gabarito comentado
+  </div>
+</div>
+
+<h2>1. Mapa do que cai na prova</h2>
+<p>As questões de geometria se distribuem pelos assuntos abaixo. Entre parênteses estão o ano e o número da questão.</p>
+<ul class="mapa">
+  <li><b>Trigonometria no triângulo retângulo – cerca de 16 questões.</b> Altura de torres, árvores, aviões, rampas e pipas (2026-Q38; 2025-Q23, Q28, Q34; 2024-Q28; 2023-Q31, Q36, Q37; 2020-Q32; 2019-Q33; 2018-Q11, Q14, Q16; 2017-Q15; 2016-Q15; 2021-Q40).</li>
+  <li><b>Teorema de Pitágoras – cerca de 15 questões.</b> Diagonais, distâncias, cabos e telhados (2026-Q22, Q32; 2025-Q31; 2024-Q25, Q26, Q27; 2023-Q26, Q30; 2021-Q22, Q27; 2020-Q31; 2019-Q40; 2017-Q12, Q14; 2016-Q20).</li>
+  <li><b>Áreas e perímetros de polígonos – cerca de 17 questões.</b> Retângulos, trapézios, triângulos, hexágonos e pisos (2026-Q37, Q40; 2025-Q24, Q27, Q36; 2024-Q22, Q23; 2023-Q34, Q35; 2021-Q33, Q37; 2020-Q29; 2018-Q18; 2017-Q13, Q16; 2016-Q12).</li>
+  <li><b>Circunferência e círculo – cerca de 17 questões.</b>
+    <ul>
+      <li>Comprimento, área e coroa circular: 2026-Q33; 2025-Q25, Q35; 2023-Q32; 2021-Q23; 2020-Q34; 2017-Q17, Q18.</li>
+      <li>Ângulos, tangentes e polígonos inscritos: 2026-Q27; 2024-Q36, Q37; 2019-Q39.</li>
+      <li>Relações métricas (cordas, secantes, tangentes): 2021-Q34; 2020-Q33; 2018-Q20; 2016-Q17.</li>
+    </ul>
+  </li>
+  <li><b>Semelhança e Teorema de Tales – cerca de 14 questões.</b> Sombras, ruas paralelas e razão de áreas (2026-Q29, Q31; 2025-Q29, Q38; 2024-Q24; 2023-Q39; 2021-Q21; 2020-Q24, Q25; 2019-Q21, Q22; 2018-Q19; 2016-Q14).</li>
+  <li><b>Relações métricas no triângulo retângulo:</b> 2016-Q18 (e, indiretamente, várias questões de Pitágoras).</li>
+  <li><b>Ângulos, triângulos e congruência:</b> 2025-Q21; 2023-Q29; 2021-Q38.</li>
+  <li><b>Geometria espacial – 6 questões.</b> Paralelepípedo e cubo: volume, área e diagonal (2026-Q39; 2024-Q34; 2021-Q32, Q35; 2020-Q28).</li>
+  <li><b>Plano cartesiano:</b> aparece nas questões de funções (gráficos de retas e parábolas), sem cobrar geometria analítica propriamente dita.</li>
+</ul>
+<div class="dica"><b>Conclusão:</b> dominar <b>Pitágoras, trigonometria (30°, 45°, 60°), áreas e círculo</b> cobre a maior parte da geometria da prova. A tendência dos anos recentes (2023–2026) é misturar assuntos na mesma questão, por exemplo Pitágoras com equação do 2º grau ou semelhança com razão de áreas.</div>
+
+<h2>2. Ângulos, Triângulos e Congruência</h2>
+<h3>Ângulos</h3>
+<ul>
+  <li><b>Opostos pelo vértice (OPV):</b> são iguais.</li>
+  <li><b>Complementares</b> somam 90°; <b>suplementares</b> somam 180°.</li>
+  <li><b>Retas paralelas cortadas por uma transversal:</b> ângulos alternos internos são iguais e ângulos correspondentes são iguais.</li>
+  <li><b>Bissetriz:</b> divide um ângulo em duas partes iguais.</li>
+</ul>
+<h3>Triângulos</h3>
+<div class="f">
+  <b>Soma dos ângulos internos:</b> <span class="eq">Â + B̂ + Ĉ = 180°</span><br>
+  <b>Ângulo externo:</b> é igual à soma dos dois ângulos internos não adjacentes a ele.<br>
+  <b>Isósceles:</b> dois lados iguais, e os ângulos da base também são iguais.<br>
+  <b>Equilátero:</b> três lados iguais e três ângulos de 60°. Um isósceles com ângulo de 60° é equilátero (2026-Q37).<br>
+  <b>Condição de existência:</b> cada lado é menor que a soma dos outros dois.
+</div>
+<h3>Congruência de triângulos</h3>
+<p>Dois triângulos são congruentes (≅) quando têm lados e ângulos correspondentes iguais. Os casos que garantem a congruência são <b>LLL, LAL, ALA e LAAo</b>. <b>AAA não garante congruência</b>, apenas semelhança. Ao escrever ABCD ≅ EFGH, a ordem das letras indica quais vértices se correspondem (2023-Q29).</p>
+
+<h2>3. Teorema de Pitágoras</h2>
+<div class="fig">
+<svg width="300" height="150" viewBox="0 0 300 150">
+  <polygon points="40,120 240,120 40,20" fill="#eef2f8" stroke="#1d3557" stroke-width="2"/>
+  <rect x="40" y="108" width="12" height="12" fill="none" stroke="#1d3557"/>
+  <text x="130" y="140" font-size="14" font-style="italic">b (cateto)</text>
+  <text x="2" y="75" font-size="14" font-style="italic">c</text>
+  <text x="150" y="60" font-size="14" font-style="italic">a (hipotenusa)</text>
+</svg>
+</div>
+<div class="f">
+  <b>Em todo triângulo retângulo:</b> <span class="eq">a² = b² + c²</span> (hipotenusa² = cateto² + cateto²)<br>
+  A hipotenusa é o maior lado e fica oposta ao ângulo reto.
+</div>
+<h3>Consequências que caem muito</h3>
+<ul>
+  <li><b>Diagonal do quadrado:</b> <span class="eq">d = ℓ√2</span>. Se d = 12√2, então ℓ = 12 e a área é 144 (2019-Q40).</li>
+  <li><b>Diagonal do retângulo:</b> <span class="eq">d = √(b² + h²)</span> (2023-Q26, 2024-Q26).</li>
+  <li><b>Altura do triângulo equilátero:</b> <span class="eq">h = ℓ√3 / 2</span>.</li>
+  <li><b>Ternas pitagóricas</b> (economizam tempo): 3-4-5, 6-8-10, 5-12-13, 8-15-17, 7-24-25 e seus múltiplos, como 30-40-50 (2021-Q22) e 6-8-10 (2021-Q27).</li>
+</ul>
+<div class="ex"><b>Exemplo (2021-Q22):</b> João anda 30 km para o sul e Pedro 40 km para o leste. Os dois caminhos formam um ângulo reto, então a distância entre eles é √(30² + 40²) = √2500 = <b>50 km</b>.</div>
+
+<h2>4. Semelhança de Triângulos e Teorema de Tales</h2>
+<p>Duas figuras são <b>semelhantes</b> quando têm a mesma forma: os ângulos correspondentes são iguais e os lados correspondentes são proporcionais. Dois triângulos são semelhantes quando têm <b>dois ângulos iguais (caso AA)</b>.</p>
+<div class="f">
+  <b>Razão de semelhança k:</b> <span class="eq">lado₁ / lado₂ = k</span><br>
+  Perímetros, alturas e medianas estão na razão <b>k</b>.<br>
+  Áreas estão na razão <b>k²</b>.<br>
+  Volumes estão na razão <b>k³</b>.
+</div>
+<ul>
+  <li><b>Sempre semelhantes:</b> dois quadrados, dois triângulos equiláteros, dois círculos e dois polígonos regulares com o mesmo número de lados.</li>
+  <li><b>Nem sempre semelhantes:</b> dois retângulos quaisquer e dois triângulos quaisquer (2024-Q24).</li>
+</ul>
+<h3>Problema da sombra</h3>
+<p>No mesmo instante, os raios do sol são paralelos. Por isso, o objeto e a pessoa formam triângulos semelhantes com suas sombras:</p>
+<div class="f"><span class="eq">altura do objeto / sombra do objeto = altura da pessoa / sombra da pessoa</span></div>
+<div class="ex"><b>Exemplo (2025-Q38):</b> 1,70 / 0,50 = H / 10, então H = <b>34 m</b>.</div>
+<h3>Teorema de Tales</h3>
+<p>Um feixe de retas paralelas cortado por duas transversais determina segmentos proporcionais. Se as paralelas cortam uma transversal em segmentos a e b e a outra em c e d, então <span class="eq">a / b = c / d</span>. É o caso das "ruas paralelas cortadas por avenidas" (2021-Q21, 2020-Q24, 2018-Q19).</p>
+<p>Uma reta paralela a um lado de um triângulo forma um triângulo menor semelhante ao original (2026-Q29, 2025-Q29).</p>
+
+<h2>5. Relações Métricas no Triângulo Retângulo</h2>
+<div class="fig">
+<svg width="320" height="160" viewBox="0 0 320 160">
+  <polygon points="20,130 300,130 110,30" fill="#eef2f8" stroke="#1d3557" stroke-width="2"/>
+  <line x1="110" y1="30" x2="110" y2="130" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="114" y="90" font-size="13" fill="#c0392b" font-style="italic">h</text>
+  <text x="55" y="148" font-size="13" font-style="italic">m</text>
+  <text x="200" y="148" font-size="13" font-style="italic">n</text>
+  <text x="45" y="75" font-size="13" font-style="italic">c</text>
+  <text x="210" y="75" font-size="13" font-style="italic">b</text>
+  <text x="150" y="158" font-size="11">a = m + n (hipotenusa)</text>
+</svg>
+</div>
+<p>Ao traçar a altura h relativa à hipotenusa, o triângulo fica dividido em dois triângulos semelhantes a ele. Daí saem as relações:</p>
+<div class="f">
+  <span class="eq">b² = a·n</span> &nbsp;&nbsp;&nbsp; <span class="eq">c² = a·m</span> &nbsp;&nbsp;&nbsp; <span class="eq">h² = m·n</span> &nbsp;&nbsp;&nbsp; <span class="eq">a·h = b·c</span> &nbsp;&nbsp;&nbsp; <span class="eq">a² = b² + c²</span>
+</div>
+<p>Aqui, m e n são as projeções dos catetos c e b sobre a hipotenusa.</p>
+
+<h2>6. Trigonometria no Triângulo Retângulo</h2>
+<p>Este é o assunto de geometria que mais aparece. Para um ângulo agudo α do triângulo retângulo:</p>
+<div class="f">
+  <span class="eq">sen α = cateto oposto / hipotenusa</span><br>
+  <span class="eq">cos α = cateto adjacente / hipotenusa</span><br>
+  <span class="eq">tg α = cateto oposto / cateto adjacente = sen α / cos α</span>
+</div>
+<h3>Ângulos notáveis (decore!)</h3>
+<ul>
+  <li><b>30°:</b> sen = 1/2, cos = √3/2, tg = √3/3</li>
+  <li><b>45°:</b> sen = √2/2, cos = √2/2, tg = 1</li>
+  <li><b>60°:</b> sen = √3/2, cos = 1/2, tg = √3</li>
+</ul>
+<p>Para memorizar, os senos de 30°, 45° e 60° são √1/2, √2/2 e √3/2. Os cossenos são os mesmos valores em ordem inversa. Também vale sen² α + cos² α = 1.</p>
+<h3>Qual razão usar?</h3>
+<ul>
+  <li>Você tem a <b>distância no chão</b> e quer a <b>altura</b>: use a <b>tangente</b> (torre, árvore, prédio).</li>
+  <li>Você tem o <b>comprimento inclinado</b> (fio, rampa, trajetória do avião) e quer a <b>altura</b>: use o <b>seno</b>.</li>
+  <li>Você tem o <b>comprimento inclinado</b> e quer a <b>distância no chão</b>: use o <b>cosseno</b>.</li>
+</ul>
+<div class="ex"><b>Exemplo (2024-Q28):</b> um avião percorre 4,6 km subindo a 30°. A altura é h = 4,6 · sen 30° = 4,6 · 0,5 = <b>2,3 km</b>.</div>
+<div class="dica"><b>Truque das duas observações (2023-Q36):</b> uma pessoa vê o topo sob 15° e, depois de andar d metros, sob 30°. Como o ângulo externo vale 30° = 15° + (ângulo no topo), o ângulo no topo também mede 15°. O triângulo é isósceles, e a distância do 2º ponto ao topo é d. Logo, altura = d · sen 30°. Com d = 183 m, a altura é 91,5 m; somando 1,5 m da altura dos olhos, dá <b>93 m</b>.</div>
+<div class="dica"><b>Se a questão dá a tangente</b> (por exemplo, tg = 5/12), monte os catetos como 5k e 12k. Pela terna 5-12-13, a hipotenusa é 13k. Com hipotenusa 39, k = 3 e os catetos são 15 e 36 (2025-Q34).</div>
+
+<h2>7. Polígonos: Perímetros e Áreas</h2>
+<p>O <b>perímetro</b> é a soma dos lados. A <b>área</b> é a medida da superfície.</p>
+<div class="f">
+  <b>Quadrado:</b> <span class="eq">A = ℓ²</span>, <span class="eq">P = 4ℓ</span><br>
+  <b>Retângulo:</b> <span class="eq">A = b·h</span>, <span class="eq">P = 2(b + h)</span><br>
+  <b>Paralelogramo:</b> <span class="eq">A = b·h</span><br>
+  <b>Triângulo:</b> <span class="eq">A = b·h / 2</span>; também <span class="eq">A = (a·b·sen θ) / 2</span>, onde θ é o ângulo entre os lados a e b (2023-Q35)<br>
+  <b>Triângulo equilátero:</b> <span class="eq">A = ℓ²√3 / 4</span><br>
+  <b>Trapézio:</b> <span class="eq">A = (B + b)·h / 2</span><br>
+  <b>Losango:</b> <span class="eq">A = D·d / 2</span><br>
+  <b>Hexágono regular:</b> são 6 triângulos equiláteros, então <span class="eq">A = 6·ℓ²√3 / 4 = 3ℓ²√3 / 2</span>
+</div>
+<h3>Ângulos de polígonos</h3>
+<ul>
+  <li>A soma dos ângulos internos é <span class="eq">Sᵢ = (n − 2)·180°</span>.</li>
+  <li>Em um polígono regular, cada ângulo interno mede Sᵢ / n e cada ângulo externo mede 360° / n.</li>
+</ul>
+<div class="dica"><b>Cuidado com as unidades.</b> 1 m = 100 cm, mas <b>1 m² = 10 000 cm²</b> e <b>1 m³ = 1 000 litros</b>. Em questões de piso e azulejo, divida a área do piso pela área da peça usando a mesma unidade (2025-Q36: 159 375 cm² ÷ 708 cm² ≈ 225 peças).</div>
+<div class="dica"><b>Áreas "hachuradas":</b> quase sempre se calcula a área da figura grande menos a área da figura pequena (2020-Q34: quadrado menos ¼ de círculo; 2025-Q24: retângulo menos os estandes).</div>
+
+<h2>8. Circunferência e Círculo</h2>
+<p>A <b>circunferência</b> é a linha (o contorno). O <b>círculo</b> é a região interna. O raio é r e o diâmetro é d = 2r.</p>
+<div class="f">
+  <b>Comprimento da circunferência:</b> <span class="eq">C = 2πr</span><br>
+  <b>Área do círculo:</b> <span class="eq">A = πr²</span><br>
+  <b>Coroa circular</b> (entre dois círculos de mesmo centro): <span class="eq">A = π(R² − r²)</span><br>
+  <b>Setor circular de ângulo θ:</b> <span class="eq">A = (θ / 360°)·πr²</span>; o arco mede <span class="eq">(θ / 360°)·2πr</span>
+</div>
+<div class="dica">Se o raio é multiplicado por k, a área é multiplicada por k². Para irrigar 10% de um campo de raio 80 m, é preciso r² = 0,1 · 80², ou seja, r ≈ 25,3 m. Partindo de 20 m, isso é um aumento de ≈ 26,5% no raio (2026-Q33).</div>
+<h3>Ângulos e tangentes</h3>
+<ul>
+  <li><b>Ângulo central</b> (vértice no centro): mede o mesmo que o arco.</li>
+  <li><b>Ângulo inscrito</b> (vértice na circunferência): mede <b>metade do arco</b>. Todo triângulo inscrito com um lado igual ao diâmetro é <b>retângulo</b> (2019-Q39).</li>
+  <li><b>A reta tangente é perpendicular ao raio</b> no ponto de tangência.</li>
+  <li>Os dois segmentos tangentes traçados de um mesmo ponto externo são iguais.</li>
+  <li>No quadrilátero formado por duas tangentes e dois raios, os dois ângulos nos pontos de tangência medem 90°. Logo, o ângulo externo e o ângulo central somam 180° (2024-Q36: 80° + x = 180°, então x = 100°).</li>
+</ul>
+<h3>Polígonos regulares inscritos (raio R)</h3>
+<ul>
+  <li><b>Hexágono:</b> <span class="eq">ℓ = R</span> (2026-Q27).</li>
+  <li><b>Quadrado:</b> <span class="eq">ℓ = R√2</span>.</li>
+  <li><b>Triângulo equilátero:</b> <span class="eq">ℓ = R√3</span>.</li>
+  <li><b>Estrela de 5 pontas</b> que divide a circunferência em 5 partes iguais: cada arco mede 360°/5 = 72°, e cada ponta da estrela (ângulo inscrito) mede metade de 72°, ou seja, 36°.</li>
+</ul>
+<h3>Relações métricas na circunferência</h3>
+<div class="fig">
+<svg width="500" height="130" viewBox="0 0 500 130">
+  <circle cx="70" cy="65" r="50" fill="none" stroke="#1d3557" stroke-width="2"/>
+  <line x1="25" y1="45" x2="115" y2="85" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="40" y1="105" x2="105" y2="28" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="20" y="128" font-size="11">Cordas: PA·PB = PC·PD</text>
+  <circle cx="230" cy="65" r="45" fill="none" stroke="#1d3557" stroke-width="2"/>
+  <line x1="190" y1="85" x2="330" y2="65" stroke="#c0392b" stroke-width="1.5"/>
+  <line x1="215" y1="22" x2="330" y2="65" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="180" y="128" font-size="11">Secantes: PA·PB = PC·PD</text>
+  <text x="333" y="69" font-size="12" font-style="italic">P</text>
+  <circle cx="400" cy="65" r="35" fill="none" stroke="#1d3557" stroke-width="2"/>
+  <line x1="400" y1="30" x2="458" y2="30" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="345" y="128" font-size="11">Tangente: PT² = PA·PB</text>
+</svg>
+</div>
+<div class="f">
+  <b>Duas cordas que se cruzam em P:</b> <span class="eq">PA·PB = PC·PD</span> (2021-Q34)<br>
+  <b>Duas secantes a partir de P externo:</b> <span class="eq">PA·PB = PC·PD</span>, multiplicando a parte externa pelo segmento inteiro<br>
+  <b>Tangente e secante a partir de P:</b> <span class="eq">PT² = PA·PB</span> (2016-Q17)<br>
+  <b>Corda perpendicular a um diâmetro:</b> o diâmetro divide a corda ao meio, e (meia corda)² = AE·EB (2020-Q33)<br>
+  <b>Duas circunferências tangentes externamente</b> (raios R e r): o segmento da tangente comum entre os pontos de contato mede <span class="eq">2√(R·r)</span> (2018-Q20: 2√(9·4) = 12)<br>
+  <b>Correia em duas polias iguais:</b> comprimento = 2·(distância entre os centros) + 2πr (2017-Q17)
+</div>
+
+<h2>9. Outras Geometrias</h2>
+<h3>Geometria espacial (6 questões)</h3>
+<div class="f">
+  <b>Paralelepípedo</b> (a × b × c):<br>
+  Volume: <span class="eq">V = a·b·c</span><br>
+  Área total: <span class="eq">A = 2(ab + ac + bc)</span><br>
+  Diagonal: <span class="eq">D = √(a² + b² + c²)</span><br>
+  <b>Cubo</b> (aresta a): <span class="eq">V = a³</span>, <span class="eq">A = 6a²</span>, <span class="eq">D = a√3</span><br>
+  <b>Capacidade:</b> <span class="eq">1 m³ = 1000 L</span> e <span class="eq">1 dm³ = 1 L</span>
+</div>
+<div class="ex"><b>Exemplos:</b> uma caixa cúbica coberta com 864 cm² de papel tem 6a² = 864, então a = 12 cm (2024-Q34). Um paralelepípedo de 7 × 6 × 6 tem diagonal √(49 + 36 + 36) = √121 = 11 (2021-Q35). Uma área alagada de 250 m × 120 m que sobe 1,8 m acumula 54 000 m³ a mais (2026-Q39).</div>
+<h3>Plano cartesiano</h3>
+<p>A prova não cobra geometria analítica (distância entre pontos, equação da reta etc.) como tema próprio. O plano cartesiano aparece nas questões de <b>funções</b>: ler pontos em gráficos de retas, achar a lei y = ax + b a partir de dois pontos e analisar parábolas (concavidade, raízes, vértice). Saber localizar pontos (x, y) e usar Pitágoras para a distância entre dois pontos, <span class="eq">d = √[(x₂ − x₁)² + (y₂ − y₁)²]</span>, já é suficiente.</p>
+
+<h2>10. Dicas de Prova</h2>
+<ul>
+  <li><b>Desenhe sempre.</b> Mesmo quando a questão tem figura, refaça marcando o ângulo reto, os valores dados e a incógnita.</li>
+  <li><b>Procure triângulos retângulos escondidos</b> em diagonais, alturas, cabos, rampas e telhados.</li>
+  <li><b>Use os valores que a questão dá</b> (π = 3 ou 3,14; √3 = 1,7). As alternativas são calculadas com eles.</li>
+  <li><b>Confira as unidades</b> (cm, m, km; cm² e m²) antes de marcar.</li>
+  <li><b>Estime o resultado.</b> A hipotenusa precisa ser o maior lado, e uma altura não pode ser maior que o fio inclinado.</li>
+  <li><b>Questões de 2023 a 2026 misturam conteúdos.</b> Revise também equação do 2º grau, porque muitas vezes as medidas saem de uma equação.</li>
+</ul>
+
+<!-- LISTA -->
+<h2 class="quebra">11. Lista de Exercícios – 20 Questões das Provas CME-PMRR</h2>
+<p class="cai">Questões selecionadas das provas de 2016 a 2026, cobrindo todos os assuntos da apostila. O gabarito comentado está no final.</p>
+
+<div class="q"><span class="n">1. (CME 2024)</span> Analise as afirmativas: I. Todo par de triângulos é sempre formado por figuras semelhantes. II. Todos os polígonos regulares que têm a mesma quantidade de lados são semelhantes. III. Dois retângulos são sempre semelhantes. IV. Dois triângulos equiláteros são sempre semelhantes. V. Dois quadrados quaisquer são sempre semelhantes. Pode-se concluir que:
+<div class="alt"><span>(A) três afirmativas estão corretas.</span><span>(B) três afirmativas estão erradas.</span><span>(C) apenas uma está correta.</span><br><span>(D) duas estão corretas.</span><span>(E) todas estão erradas.</span></div></div>
+
+<div class="q"><span class="n">2. (CME 2026)</span> Uma estrutura triangular tem hastes de 60 cm, 200 cm e 220 cm. Deseja-se transformá-la em um triângulo retângulo, adicionando uma mesma medida (em metros) a cada lado. Qual deve ser essa medida?
+<div class="alt"><span>(A) 0,2</span><span>(B) 0,4</span><span>(C) 0,6</span><br><span>(D) 0,8</span><span>(E) 1,0</span></div></div>
+
+<div class="q"><span class="n">3. (CME 2023)</span> O vão do Portal do Milênio, em Boa Vista, tem formato retangular, com aproximadamente 10 m de altura e 6 m de largura. Qual o comprimento aproximado de sua diagonal?
+<div class="alt"><span>(A) 10,10 m</span><span>(B) 11,66 m</span><span>(C) 13,55 m</span><br><span>(D) 9,56 m</span><span>(E) 20,00 m</span></div></div>
+
+<div class="q"><span class="n">4. (CME 2023)</span> Os lados de um triângulo ABC medem 9 cm, 10 cm e 11 cm. Quais são as medidas dos lados de um triângulo DEF semelhante a ele cujo perímetro mede 0,9 m?
+<div class="alt"><span>(A) 15, 30 e 45 cm</span><span>(B) 27, 30 e 33 cm</span><span>(C) 27, 40 e 23 cm</span><br><span>(D) 21, 50 e 19 cm</span><span>(E) 30, 31 e 29 cm</span></div></div>
+
+<div class="q"><span class="n">5. (CME 2025)</span> João tem 1,70 m de altura e projeta uma sombra de 0,50 m. No mesmo instante, a sombra de uma árvore mede 10 m. Qual a altura da árvore?
+<div class="alt"><span>(A) 20 m</span><span>(B) 26 m</span><span>(C) 34 m</span><br><span>(D) 42 m</span><span>(E) 45 m</span></div></div>
+
+<div class="q"><span class="n">6. (CME 2026)</span> Numa maquete, duas quadras são representadas por pentágonos regulares semelhantes. O lado do pentágono real mede 18 m e o lado correspondente na maquete mede 6 cm. A área do pentágono real é 702 m². Qual é a área do pentágono da maquete, em cm²?
+<div class="alt"><span>(A) 14</span><span>(B) 78</span><span>(C) 117</span><br><span>(D) 162</span><span>(E) 234</span></div></div>
+
+<div class="q"><span class="n">7. (CME 2016)</span> No triângulo MON, retângulo em O, MN mede 10 cm, OM mede 6 cm e OQ, a altura relativa à hipotenusa MN, mede 4,8 cm. A soma das medidas de MQ e ON é:
+<div class="alt"><span>(A) 19 cm</span><span>(B) 15,8 cm</span><span>(C) 11,6 cm</span><br><span>(D) 12,7 cm</span><span>(E) 18,1 cm</span></div></div>
+
+<div class="q"><span class="n">8. (CME 2025)</span> Uma face de uma rampa forma um triângulo retângulo cuja hipotenusa mede 39 cm. A tangente de um dos ângulos agudos é 5/12. A soma das medidas dos catetos é:
+<div class="alt"><span>(A) 31 cm</span><span>(B) 38 cm</span><span>(C) 41 cm</span><br><span>(D) 48 cm</span><span>(E) 51 cm</span></div></div>
+
+<div class="q"><span class="n">9. (CME 2018)</span> Um turista está a 220 m da base da Torre da Embratel, em Boa Vista, e vê o topo sob um ângulo de 30°. Desprezando a altura do turista, qual a altura aproximada da torre? (Considere √3 ≅ 1,7.)
+<div class="alt"><span>(A) 100 m</span><span>(B) 115 m</span><span>(C) 105 m</span><br><span>(D) 129 m</span><span>(E) 124 m</span></div></div>
+
+<div class="q"><span class="n">10. (CME 2023)</span> Uma pessoa observa o topo do Mirante de Boa Vista sob um ângulo de 15°. Caminhando 183 m em direção ao Mirante, passa a avistar o topo sob 30°. Se os olhos da pessoa estão a 1,5 m do chão, a altura do Mirante é: (Use sen 30° = ½.)
+<div class="alt"><span>(A) 93 m</span><span>(B) 94 m</span><span>(C) 95 m</span><br><span>(D) 96 m</span><span>(E) 97 m</span></div></div>
+
+<div class="q"><span class="n">11. (CME 2026)</span> Num triângulo ABC, AB = AC, o ângulo BÂC mede 60° e a altura relativa ao lado BC mede 6 cm. A área desse triângulo, em cm², é:
+<div class="alt"><span>(A) 18√3</span><span>(B) 36</span><span>(C) 27</span><br><span>(D) 18</span><span>(E) 12√3</span></div></div>
+
+<div class="q"><span class="n">12. (CME 2021)</span> Um pasto tem a forma de um hexágono regular de lado 50 m. Sabendo que 100 m² alimentam 12 carneiros, quantos carneiros o pasto alimenta? (Use √3 = 1,7.)
+<div class="alt"><span>(A) 150</span><span>(B) 550</span><span>(C) 300</span><br><span>(D) 765</span><span>(E) 715</span></div></div>
+
+<div class="q"><span class="n">13. (CME 2020)</span> Uma região retangular tem 42 m² de área. Aumentando em 1 m a base e em 1 m a altura, a nova região passa a ter 56 m². O perímetro da primeira região é:
+<div class="alt"><span>(A) 26 m</span><span>(B) 36 m</span><span>(C) 46 m</span><br><span>(D) 56 m</span><span>(E) 66 m</span></div></div>
+
+<div class="q"><span class="n">14. (CME 2026)</span> Um hexágono regular de lado ℓ está inscrito em uma circunferência de centro O. A razão entre a área do círculo e a área do hexágono é igual a 4√3·C. Considerando π = 3, o valor de C é:
+<div class="alt"><span>(A) 1/3</span><span>(B) 2/5</span><span>(C) 1/6</span><br><span>(D) 3/2</span><span>(E) 7/9</span></div></div>
+
+<div class="q"><span class="n">15. (CME 2025)</span> Uma pista tem a forma de dois círculos concêntricos. O círculo menor tem comprimento de 31,4 cm, e o raio do maior é o triplo do raio do menor. A área da coroa circular é: (Use π = 3,14.)
+<div class="alt"><span>(A) 31,4 cm²</span><span>(B) 78,5 cm²</span><span>(C) 628 cm²</span><br><span>(D) 706,5 cm²</span><span>(E) 935 cm²</span></div></div>
+
+<div class="q"><span class="n">16. (CME 2021)</span> Num campo de futebol de 100 m por 45 m foram fixados seis esguichos. Cada um molha uma área circular de raio 10 m, sem ultrapassar as linhas do campo e sem molhar a mesma parte duas vezes. Qual a área aproximada do campo que não será molhada? (Use π = 3.)
+<div class="alt"><span>(A) 4500 m²</span><span>(B) 1800 m²</span><span>(C) 2700 m²</span><br><span>(D) 2300 m²</span><span>(E) 2000 m²</span></div></div>
+
+<div class="q"><span class="n">17. (CME 2024)</span> As retas AB e AC tangenciam uma circunferência de centro D nos pontos B e C. Quando o ângulo CÂB mede 80°, o ângulo CD̂B mede:
+<div class="alt"><span>(A) 90°</span><span>(B) 100°</span><span>(C) 70°</span><br><span>(D) 110°</span><span>(E) 120°</span></div></div>
+
+<div class="q"><span class="n">18. (CME 2020)</span> Num círculo, a corda CD é perpendicular ao diâmetro AB no ponto E. Se AE · EB = 5, a medida de CD é:
+<div class="alt"><span>(A) 3</span><span>(B) 2√5</span><span>(C) √5</span><br><span>(D) 3√3</span><span>(E) √3</span></div></div>
+
+<div class="q"><span class="n">19. (CME 2016)</span> Uma formiga sai de um ponto M da circunferência e anda por um segmento tangente até um ponto P externo. Em seguida, anda em linha reta por um segmento secante que intersecta a circunferência nos pontos N e Q, nessa ordem. De M até P ela andou 10 cm e de P até N, 5 cm. Qual a distância de N até Q?
+<div class="alt"><span>(A) 15 cm</span><span>(B) 18 cm</span><span>(C) 90 cm</span><br><span>(D) 10 cm</span><span>(E) 25 cm</span></div></div>
+
+<div class="q"><span class="n">20. (CME 2020)</span> Um reservatório em forma de bloco retangular tem 4 m de altura e capacidade de 300 000 litros. Na base, o lado maior é o triplo do lado menor. O perímetro e a área da base medem, respectivamente:
+<div class="alt"><span>(A) 40 m e 75 m²</span><span>(B) 20 m e 55 m²</span><span>(C) 40 m e 35 m²</span><br><span>(D) 15 m e 5 m²</span><span>(E) 30 m e 75 m²</span></div></div>
+
+<!-- GABARITO -->
+<h2 class="quebra">12. Gabarito Comentado</h2>
+<div class="gab">
+<p><b>1 – A.</b> I é falsa, II é verdadeira, III é falsa, IV é verdadeira e V é verdadeira. São três afirmativas corretas.</p>
+<p><b>2 – B.</b> Em metros, os lados são 0,6 + x, 2 + x e 2,2 + x. Por Pitágoras, (0,6 + x)² + (2 + x)² = (2,2 + x)², o que leva a x² + 0,8x − 0,48 = 0. A raiz positiva é x = 0,4 m.</p>
+<p><b>3 – B.</b> d = √(10² + 6²) = √136 ≈ 11,66 m.</p>
+<p><b>4 – B.</b> O perímetro original é 30 cm e o novo é 90 cm, então k = 3. Os lados ficam 27, 30 e 33 cm.</p>
+<p><b>5 – C.</b> 1,70 / 0,50 = H / 10, então H = 34 m.</p>
+<p><b>6 – B.</b> A razão de semelhança é 6 cm / 1800 cm = 1/300, e as áreas ficam na razão 1/90 000. Como 702 m² = 7 020 000 cm², a área da maquete é 7 020 000 / 90 000 = 78 cm².</p>
+<p><b>7 – C.</b> Por Pitágoras, ON = √(100 − 36) = 8. Pela relação OM² = MN · MQ, 36 = 10 · MQ, então MQ = 3,6. A soma é 3,6 + 8 = 11,6 cm.</p>
+<p><b>8 – E.</b> Os catetos são 5k e 12k e a hipotenusa é 13k = 39, então k = 3. Os catetos medem 15 e 36, e a soma é 51 cm.</p>
+<p><b>9 – E.</b> h = 220 · tg 30° = 220 · √3/3 ≈ 220 · 1,7 / 3 ≈ 124,7. A resposta é aproximadamente 124 m.</p>
+<p><b>10 – A.</b> O ângulo no topo mede 30° − 15° = 15°, então o triângulo é isósceles e a distância do 2º ponto até o topo é 183 m. A altura acima dos olhos é 183 · sen 30° = 91,5 m. Somando 1,5 m, o Mirante tem 93 m.</p>
+<p><b>11 – E.</b> O triângulo é isósceles com ângulo de 60°, logo é equilátero. De h = ℓ√3/2 = 6 sai ℓ = 4√3. A área é ℓ²√3/4 = 48√3/4 = 12√3.</p>
+<p><b>12 – D.</b> A = 6 · 50²√3/4 = 6 · 625 · 1,7 = 6375 m². Como 6375 / 100 · 12 = 765, o pasto alimenta 765 carneiros.</p>
+<p><b>13 – A.</b> Temos ab = 42 e (a + 1)(b + 1) = 56. Expandindo, ab + a + b + 1 = 56, então a + b = 13. O perímetro é 2 · 13 = 26 m.</p>
+<p><b>14 – C.</b> No hexágono inscrito, R = ℓ. A área do círculo é 3ℓ² e a do hexágono é 3√3ℓ²/2. A razão é 2/√3 = 2√3/3. De 4√3 · C = 2√3/3 sai C = 1/6.</p>
+<p><b>15 – C.</b> 2πr = 31,4 dá r = 5 e R = 15. A coroa tem área 3,14 · (225 − 25) = 628 cm².</p>
+<p><b>16 – C.</b> O campo tem 4500 m² e os círculos somam 6 · 3 · 10² = 1800 m². A área não molhada é 4500 − 1800 = 2700 m².</p>
+<p><b>17 – B.</b> No quadrilátero ABDC, os ângulos em B e C medem 90° (tangente perpendicular ao raio). Então 80° + 90° + 90° + x = 360°, e x = 100°.</p>
+<p><b>18 – B.</b> (CD/2)² = AE · EB = 5, então CD/2 = √5 e CD = 2√5.</p>
+<p><b>19 – A.</b> PM² = PN · PQ, ou seja, 100 = 5 · PQ, então PQ = 20. Logo NQ = 20 − 5 = 15 cm.</p>
+<p><b>20 – A.</b> 300 000 L = 300 m³, e a área da base é 300 / 4 = 75 m². Como x · 3x = 75, x = 5. Os lados medem 5 e 15, e o perímetro é 40 m.</p>
+</div>
+
+<p class="cai" style="margin-top:18pt">Fonte das questões: provas de Matemática do Processo Seletivo CME-PMRR (Colégio Militar Estadual – Roraima), ingresso na 1ª série do Ensino Médio, 2016 a 2026.</p>
+
+</body>
+</html>
