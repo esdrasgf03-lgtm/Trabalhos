@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Apostila de Matemática Financeira – CME-PMRR</title>
+<style>
+  @page { size: A4; margin: 1.8cm 2cm 1.8cm 2.2cm; }
+  body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 10.5pt; line-height: 1.45; color: #111; }
+  h1 { font-size: 20pt; margin: 0 0 4pt; color: #1b5e3a; }
+  h2 { font-size: 14pt; color: #fff; background: #1b5e3a; padding: 4pt 8pt; margin: 18pt 0 8pt; page-break-after: avoid; }
+  h3 { font-size: 11.5pt; color: #1b5e3a; margin: 12pt 0 4pt; border-bottom: 1px solid #a9c4b3; padding-bottom: 1pt; page-break-after: avoid; }
+  p { margin: 4pt 0; text-align: justify; }
+  ul { margin: 3pt 0; padding-left: 18pt; }
+  li { margin: 2pt 0; }
+  .capa { text-align: center; padding-top: 4cm; page-break-after: always; }
+  .capa .sub { font-size: 12pt; color: #444; margin-top: 6pt; }
+  .capa .box { margin: 2.5cm auto 0; width: 80%; border: 2px solid #1b5e3a; padding: 12pt 16pt; text-align: left; font-size: 11pt; }
+  .f { background: #edf6f0; border-left: 4px solid #1b5e3a; padding: 5pt 10pt; margin: 6pt 0; page-break-inside: avoid; }
+  .f b { color: #1b5e3a; }
+  .eq { font-family: "DejaVu Serif", serif; font-style: italic; }
+  .dica { background: #fff6e0; border-left: 4px solid #e9a400; padding: 5pt 10pt; margin: 6pt 0; page-break-inside: avoid; }
+  .ex { background: #eef2f8; border-left: 4px solid #1d3557; padding: 5pt 10pt; margin: 6pt 0; page-break-inside: avoid; }
+  .cai { font-size: 9pt; color: #555; font-style: italic; }
+  .fig { text-align: center; margin: 6pt 0; page-break-inside: avoid; }
+  .q { margin: 10pt 0; page-break-inside: avoid; }
+  .q .n { font-weight: bold; color: #1b5e3a; }
+  .q .alt { padding-left: 14pt; margin-top: 3pt; }
+  .q .alt span { display: inline-block; min-width: 30%; }
+  .gab p { margin: 5pt 0; }
+  .quebra { page-break-before: always; }
+  .mapa li { margin: 3pt 0; }
+</style>
+</head>
+<body>
+
+<div class="capa">
+  <h1>Apostila de Matemática Financeira</h1>
+  <div class="sub">Porcentagem, aumentos e descontos, lucro e prejuízo, juros simples e compostos<br>Preparação para o Processo Seletivo CME-PMRR (Roraima) – 1ª série do Ensino Médio</div>
+  <div class="box">
+    <b>Como esta apostila foi feita:</b> analisei as 170 questões de Matemática das provas de 2016 a 2026. <b>Cerca de 25 questões (≈ 15%) envolvem dinheiro, porcentagem, lucro ou juros.</b> Os capítulos seguem o que mais cai, e cada um indica as questões das provas sobre o tema.<br><br>
+    <b>Conteúdo:</b><br>
+    1. Mapa do que cai na prova<br>
+    2. Porcentagem<br>
+    3. Fator multiplicativo: aumentos e descontos<br>
+    4. Lucro e prejuízo<br>
+    5. Juros simples<br>
+    6. Juros compostos<br>
+    7. Salário com comissão, tarifas e custos (função afim)<br>
+    8. Divisão proporcional e conversão de moedas<br>
+    9. Dicas de prova<br>
+    10. Lista de 20 exercícios (12 das provas + 8 inéditas)<br>
+    11. Gabarito comentado
+  </div>
+</div>
+
+<h2>1. Mapa do que cai na prova</h2>
+<ul class="mapa">
+  <li><b>Porcentagem e taxa de variação – cerca de 8 questões.</b> Percentual de aumento, redução na conta de luz, percentual de um grupo (2026-Q26; 2024-Q39; 2023-Q27, Q40; 2020-Q36; 2019-Q27; 2018-Q15; 2025-Q39).</li>
+  <li><b>Salário com comissão e tarifas – cerca de 9 questões.</b> Valor fixo mais parte variável: táxi, Uber, hotel, aluguel de avião, salário mais % das vendas (2024-Q29, Q30; 2023-Q21; 2021-Q30, Q31; 2020-Q26, Q30; 2019-Q28; 2017-Q11).</li>
+  <li><b>Aumentos sucessivos (juros compostos):</b> 2024-Q40, em que a blusa sobe 5% ao mês.</li>
+  <li><b>Juros simples:</b> 2020-Q35 (R$ 800 a 2% ao mês por 8 meses).</li>
+  <li><b>Lucro e prejuízo:</b> 2020-Q27 (gráfico de lucro, "nem lucro nem prejuízo").</li>
+  <li><b>Divisão proporcional de dinheiro:</b> 2026-Q23 (divisão da conta da pizzaria), 2026-Q34 (divisão inversamente proporcional) e 2023-Q23 (arrecadação).</li>
+  <li><b>Conversão de moedas e sistemas de preços:</b> 2021-Q32 (frete em dólar) e 2018-Q17 (preço de laranjas e maçãs).</li>
+</ul>
+<div class="dica"><b>Atenção:</b> juros simples e compostos aparecem pouco <b>com esse nome</b> (1 ou 2 questões). Já a <b>porcentagem</b> está em quase todas as provas e é a base de juros, lucro e descontos. Por isso a apostila começa por ela. Comissão e tarifa também são muito frequentes: são funções do tipo y = ax + b com dinheiro.</div>
+
+<h2>2. Porcentagem</h2>
+<p>Porcentagem é uma razão de denominador 100: <span class="eq">x% = x/100</span>. Por exemplo, 25% = 0,25 = 1/4.</p>
+<div class="f">
+  <b>Calcular x% de um valor:</b> <span class="eq">x% de V = (x/100)·V</span>. Exemplo: 5% de 24 000 = 0,05 · 24 000 = 1200.<br>
+  <b>Que porcentagem A é de B:</b> <span class="eq">(A / B)·100%</span>. Exemplo: 1556 de 1920 é 1556/1920 ≈ 81%.<br>
+  <b>Taxa de variação (aumento ou redução percentual):</b> <span class="eq">(valor novo − valor antigo) / valor antigo · 100%</span>
+</div>
+<div class="ex"><b>Exemplo (2023-Q40):</b> os focos de calor passaram de 17 692 para 23 059. A variação é (23 059 − 17 692) / 17 692 = 5367 / 17 692 ≈ 0,303, ou seja, um aumento de <b>≈ 30,3%</b>.</div>
+<div class="dica"><b>Divida sempre pelo valor ANTIGO</b> (o de referência). É o erro mais comum.</div>
+<p><b>Atalhos de cálculo mental:</b> 10% é dividir por 10; 1% é dividir por 100; 5% é a metade de 10%; 50% é a metade; 25% é a quarta parte.</p>
+
+<h2>3. Fator Multiplicativo: Aumentos e Descontos</h2>
+<div class="f">
+  <b>Aumento de i%:</b> multiplique por <span class="eq">(1 + i)</span>. Um aumento de 5% é ×1,05.<br>
+  <b>Desconto de i%:</b> multiplique por <span class="eq">(1 − i)</span>. Um desconto de 3% é ×0,97.<br>
+  <b>Aumentos ou descontos sucessivos:</b> multiplique os fatores. <b>Não some as porcentagens!</b>
+</div>
+<ul>
+  <li><b>Lendo o fator:</b> multiplicar por 0,97 significa um <b>desconto de 3%</b> (2024-Q39), e multiplicar por 1,30 significa um <b>aumento de 30%</b>.</li>
+  <li><b>Dois aumentos de 5%:</b> 1,05 · 1,05 = 1,1025, um aumento total de 10,25%, e não de 10% (2024-Q40: 120 · 1,1025 = <b>R$ 132,30</b>).</li>
+  <li><b>Aumento de 20% seguido de desconto de 20%:</b> 1,2 · 0,8 = 0,96. O preço final é 4% <b>menor</b>, e não igual ao original.</li>
+  <li><b>Descontos de 20% e 10%:</b> 0,8 · 0,9 = 0,72, um desconto total de 28%.</li>
+</ul>
+
+<h2>4. Lucro e Prejuízo</h2>
+<div class="f">
+  <b>Lucro:</b> <span class="eq">L = V − C</span> (preço de venda menos preço de custo)<br>
+  Se L &gt; 0 há <b>lucro</b>; se L &lt; 0 há <b>prejuízo</b>; se L = 0, <b>nem lucro nem prejuízo</b> (ponto de equilíbrio).<br>
+  <b>Lucro de i% sobre o custo:</b> <span class="eq">V = C·(1 + i)</span><br>
+  <b>Prejuízo de i% sobre o custo:</b> <span class="eq">V = C·(1 − i)</span><br>
+  <b>Lucro de i% sobre a venda:</b> <span class="eq">L = i·V</span>, ou seja, <span class="eq">C = V·(1 − i)</span>
+</div>
+<div class="ex"><b>Exemplo:</b> um produto comprado por R$ 80 e vendido com lucro de 25% sobre o custo sai por V = 80 · 1,25 = <b>R$ 100</b>. Se foi vendido por R$ 360 com prejuízo de 10%, então 360 = C · 0,9 e o custo era C = <b>R$ 400</b>.</div>
+<h3>Custo fixo, custo variável e ponto de equilíbrio</h3>
+<p>Muitas questões trazem um custo fixo mais um custo por unidade, e uma receita por unidade vendida:</p>
+<div class="f">
+  <span class="eq">Custo: C(x) = custo fixo + (custo por unidade)·x</span><br>
+  <span class="eq">Receita: R(x) = (preço de venda)·x</span><br>
+  <span class="eq">Lucro: L(x) = R(x) − C(x)</span><br>
+  O ponto de equilíbrio (lucro zero) acontece quando R(x) = C(x).
+</div>
+<p>Em um gráfico de lucro ao longo do tempo (2020-Q27), "nem lucro nem prejuízo" é o ponto em que o gráfico corta o eixo horizontal (L = 0).</p>
+
+<h2>5. Juros Simples</h2>
+<p>Nos juros simples, o juro de cada período é sempre calculado sobre o <b>capital inicial</b>. Por isso ele é o mesmo todo mês, e o montante cresce em linha reta.</p>
+<div class="f">
+  <b>Juros:</b> <span class="eq">J = C · i · t</span><br>
+  <b>Montante:</b> <span class="eq">M = C + J = C·(1 + i·t)</span><br>
+  C = capital, i = taxa (na forma decimal), t = tempo.
+</div>
+<div class="dica"><b>A taxa e o tempo precisam estar na mesma unidade.</b> Com taxa ao mês, use o tempo em meses; com taxa ao ano, em anos. Nos juros simples, 2% ao mês equivale a 24% ao ano.</div>
+<div class="ex"><b>Exemplo (2020-Q35):</b> R$ 800 a 2% ao mês durante 8 meses. Os juros são J = 800 · 0,02 · 8 = 128, e o montante é M = 800 + 128 = <b>R$ 928</b>.</div>
+<p><b>Problemas "ao contrário":</b> se a questão dá o montante e pede o capital, use C = M / (1 + i·t). Se pede o tempo ou a taxa, isole na fórmula J = C·i·t.</p>
+
+<h2>6. Juros Compostos</h2>
+<p>Nos juros compostos, o juro de cada período é calculado sobre o <b>montante do período anterior</b> ("juros sobre juros"). É o mesmo cálculo dos aumentos sucessivos do capítulo 3.</p>
+<div class="f">
+  <b>Montante:</b> <span class="eq">M = C·(1 + i)<sup>t</sup></span><br>
+  <b>Juros:</b> <span class="eq">J = M − C</span>
+</div>
+<p><b>Fatores que ajudam a calcular rápido:</b></p>
+<ul>
+  <li>1,1² = 1,21 e 1,1³ = 1,331</li>
+  <li>1,05² = 1,1025 e 1,02² = 1,0404</li>
+  <li>1,2² = 1,44 e 1,5² = 2,25</li>
+</ul>
+<div class="ex"><b>Exemplo:</b> R$ 2000 a 10% ao mês durante 3 meses. Mês a mês: 2000 → 2200 → 2420 → 2662. Pela fórmula, M = 2000 · 1,1³ = 2000 · 1,331 = <b>R$ 2662</b>.</div>
+<h3>Simples × compostos</h3>
+<ul>
+  <li><b>No 1º período</b>, os dois dão o mesmo resultado.</li>
+  <li><b>A partir do 2º período</b>, os juros compostos rendem mais.</li>
+  <li><b>Crescimento:</b> nos juros simples o montante cresce como uma <b>função afim</b> (reta); nos compostos, como uma <b>função exponencial</b> (curva cada vez mais inclinada).</li>
+</ul>
+<div class="ex"><b>Exemplo:</b> R$ 5000 a 4% ao mês por 2 meses. Nos juros simples, M = 5000 · 1,08 = 5400. Nos compostos, M = 5000 · 1,0816 = 5408. A diferença é de R$ 8.</div>
+
+<h2>7. Salário com Comissão, Tarifas e Custos (Função Afim)</h2>
+<p>Este é o tipo de questão "com dinheiro" que mais cai. O valor total tem uma <b>parte fixa</b> e uma <b>parte que varia</b> com a quantidade:</p>
+<div class="f"><span class="eq">y = a·x + b</span>, em que b é a parte fixa (taxa fixa, salário fixo, abono) e a é o valor por unidade (por km, por aula, por noite, por hora) ou o percentual de comissão.</div>
+<ul>
+  <li><b>Salário com comissão:</b> S = fixo + i% · vendas. Exemplo (2020-Q30): 980 + 0,08 · 48 000 = <b>R$ 4820</b>.</li>
+  <li><b>Táxi ou Uber:</b> P = taxa fixa + preço por km · distância. Exemplo (2021-Q30): 5 + 1,75 · 14 = <b>R$ 29,50</b>.</li>
+  <li><b>Problema inverso</b> (sabe o preço e quer a quantidade): resolva a equação. Exemplo (2021-Q31): 110 = 5 + 1,75x dá x = <b>60 km</b>.</li>
+  <li><b>Achar a lei a partir de uma tabela</b> (2024-Q29): 1 noite custa 180, 2 custam 230, 3 custam 280. Cada noite a mais acrescenta 50, então a = 50. Para x = 1, 50 + b = 180, logo b = 130. A lei é f(x) = <b>50x + 130</b>.</li>
+</ul>
+
+<h2>8. Divisão Proporcional e Conversão de Moedas</h2>
+<h3>Divisão diretamente proporcional</h3>
+<p>Para dividir um total T em partes proporcionais a a, b e c, faça cada parte = k·a, k·b e k·c, com <span class="eq">k = T / (a + b + c)</span>.</p>
+<h3>Divisão inversamente proporcional</h3>
+<p>Divida em partes proporcionais aos <b>inversos</b> (1/a, 1/b, 1/c). Para facilitar, multiplique os inversos pelo MMC e transforme-os em números inteiros.</p>
+<div class="ex"><b>Exemplo (2026-Q34):</b> R$ 1200 divididos de forma inversamente proporcional a 6, 8 e 12 dias. Os inversos são 1/6, 1/8 e 1/12; multiplicando pelo MMC 24, ficam 4, 3 e 2. A soma é 9, então k = 1200 / 9. A parte de Bruno é 3 · 1200 / 9 = <b>R$ 400</b>.</div>
+<h3>Conversão de moedas</h3>
+<p>Calcule tudo na moeda original e converta só no final, multiplicando pela cotação. Exemplo (2021-Q32): 200 cm³ · 21 dólares = 4200 dólares, e 4200 · 5,6 = <b>R$ 23 520</b>.</p>
+
+<h2>9. Dicas de Prova</h2>
+<ul>
+  <li><b>Troque porcentagem por número decimal</b> antes de calcular (8% = 0,08).</li>
+  <li><b>Aumentos ou descontos seguidos:</b> multiplique os fatores, nunca some as porcentagens.</li>
+  <li><b>Juros simples:</b> o juro mensal é sempre o mesmo, J = C·i·t. <b>Juros compostos:</b> faça mês a mês quando forem poucos períodos, o que evita erros com a potência.</li>
+  <li><b>Confira a unidade da taxa e do tempo</b> (mês × ano).</li>
+  <li><b>Taxa de variação:</b> divida pelo valor antigo.</li>
+  <li><b>Estime antes de marcar.</b> Um desconto nunca deixa o preço maior, e os juros compostos dão um pouco mais que os simples.</li>
+</ul>
+
+<!-- LISTA -->
+<h2 class="quebra">10. Lista de Exercícios – 20 Questões</h2>
+<p class="cai">As questões 1 a 12 são das provas CME-PMRR de 2018 a 2026. As questões 13 a 20 são inéditas, no mesmo estilo, para treinar juros compostos e lucro, que aparecem pouco nas provas mas podem cair. O gabarito comentado está no final.</p>
+
+<div class="q"><span class="n">1. (CME 2020)</span> Pedrito aplicou R$ 800,00 com rendimentos mensais de 2% a juros simples. O montante será creditado após 8 meses. Qual deve ser o valor creditado?
+<div class="alt"><span>(A) R$ 928,00</span><span>(B) R$ 828,00</span><span>(C) R$ 1028,00</span><br><span>(D) R$ 859,00</span><span>(E) R$ 900,00</span></div></div>
+
+<div class="q"><span class="n">2. (CME 2024)</span> Uma loja de roupas em Boa Vista decidiu aumentar em 5% o preço de suas mercadorias, mês a mês. Uma blusa custava R$ 120,00 em agosto. Com esses aumentos sucessivos, qual o preço da blusa em outubro?
+<div class="alt"><span>(A) R$ 126,00</span><span>(B) R$ 138,90</span><span>(C) R$ 132,30</span><br><span>(D) R$ 142,05</span><span>(E) R$ 150,00</span></div></div>
+
+<div class="q"><span class="n">3. (CME 2024)</span> Multiplicar o valor de um produto por 0,97 significa que esse produto sofreu um:
+<div class="alt"><span>(A) aumento de 97%</span><span>(B) desconto de 97%</span><span>(C) aumento de 3%</span><br><span>(D) aumento de 30%</span><span>(E) desconto de 3%</span></div></div>
+
+<div class="q"><span class="n">4. (CME 2020)</span> A Aneel aprovou uma redução de 2,34% nas tarifas dos consumidores ligados na baixa tensão. Um consumidor desse grupo pagou R$ 350,00 no mês anterior. Desprezando os tributos e mantendo o mesmo consumo, de quanto será, em média, a redução na próxima conta?
+<div class="alt"><span>(A) R$ 10,20</span><span>(B) R$ 9,26</span><span>(C) R$ 8,19</span><br><span>(D) R$ 12,15</span><span>(E) R$ 7,00</span></div></div>
+
+<div class="q"><span class="n">5. (CME 2023)</span> Até meados de outubro de 2022 foram verificados 23 059 focos de calor em Roraima. No mesmo período de 2021 foram 17 692 focos. O percentual de aumento foi de aproximadamente:
+<div class="alt"><span>(A) 30,3%</span><span>(B) 40%</span><span>(C) 25,5%</span><br><span>(D) 50%</span><span>(E) 100%</span></div></div>
+
+<div class="q"><span class="n">6. (CME 2019)</span> Uma empresa de construção em Roraima tem 1920 funcionários, dos quais 364 são estrangeiros. O percentual aproximado de funcionários brasileiros nessa empresa é:
+<div class="alt"><span>(A) 25%</span><span>(B) 80%</span><span>(C) 50%</span><br><span>(D) 20%</span><span>(E) 10%</span></div></div>
+
+<div class="q"><span class="n">7. (CME 2024)</span> O salário bruto mensal de um vendedor é uma parcela fixa de R$ 850,00 mais 5% do total de suas vendas no mês. Em outubro, ele vendeu R$ 24 000,00. Qual o seu salário bruto nesse mês?
+<div class="alt"><span>(A) R$ 1200,00</span><span>(B) R$ 2050,00</span><span>(C) R$ 1850,00</span><br><span>(D) R$ 2500,00</span><span>(E) R$ 12 500,00</span></div></div>
+
+<div class="q"><span class="n">8. (CME 2020)</span> Em uma loja de material de construção, o salário mensal é um valor fixo de R$ 980,00 mais uma comissão de 8% sobre o total das vendas. Se o funcionário vender R$ 48 000,00 em um mês, quanto receberá?
+<div class="alt"><span>(A) R$ 4000,00</span><span>(B) R$ 4500,00</span><span>(C) R$ 4820,00</span><br><span>(D) R$ 4350,00</span><span>(E) R$ 4948,00</span></div></div>
+
+<div class="q"><span class="n">9. (CME 2021)</span> Numa corrida de Uber, qualquer passageiro paga uma taxa fixa de R$ 5,00 mais R$ 1,75 por quilômetro rodado. Quantos quilômetros uma pessoa percorreu se pagou R$ 110,00 pela corrida?
+<div class="alt"><span>(A) 40</span><span>(B) 50</span><span>(C) 60</span><br><span>(D) 70</span><span>(E) 80</span></div></div>
+
+<div class="q"><span class="n">10. (CME 2021)</span> Para "fretar" uma caixa de 1 cm × 1 cm × 1 cm, paga-se 21 dólares. Qual o custo, em reais, para importar uma caixa de 5 cm × 4 cm × 10 cm? (Use 1 dólar = 5,6 reais.)
+<div class="alt"><span>(A) 4200</span><span>(B) 2300</span><span>(C) 23 520</span><br><span>(D) 2100</span><span>(E) 20 000</span></div></div>
+
+<div class="q"><span class="n">11. (CME 2026)</span> Ana, Bruno e Carlos receberam juntos R$ 1200,00. O valor foi dividido de forma inversamente proporcional ao número de dias que cada um levou para concluir sua parte: Ana, 6 dias; Bruno, 8 dias; Carlos, 12 dias. Quanto recebeu Bruno?
+<div class="alt"><span>(A) R$ 360,00</span><span>(B) R$ 380,00</span><span>(C) R$ 400,00</span><br><span>(D) R$ 420,00</span><span>(E) R$ 440,00</span></div></div>
+
+<div class="q"><span class="n">12. (CME 2026)</span> Cinco amigos dividiram uma conta de R$ 100,00 assim:
+<ul>
+  <li>o primeiro paga R$ 1,8333... para cada real que o segundo pagar;</li>
+  <li>o terceiro paga o mesmo que o segundo;</li>
+  <li>o quarto paga a metade do que o segundo pagar;</li>
+  <li>o quinto paga R$ 13,00 a mais que o quarto.</li>
+</ul>
+Quanto, aproximadamente, o segundo amigo deverá pagar?
+<div class="alt"><span>(A) R$ 15,00</span><span>(B) R$ 17,00</span><span>(C) R$ 18,00</span><br><span>(D) R$ 19,00</span><span>(E) R$ 20,00</span></div></div>
+
+<div class="q"><span class="n">13. (Inédita – juros simples)</span> Que capital, aplicado a juros simples de 2,5% ao mês, gera um montante de R$ 2400,00 em 8 meses?
+<div class="alt"><span>(A) R$ 1800,00</span><span>(B) R$ 1920,00</span><span>(C) R$ 2000,00</span><br><span>(D) R$ 2100,00</span><span>(E) R$ 2200,00</span></div></div>
+
+<div class="q"><span class="n">14. (Inédita – juros compostos)</span> Um capital de R$ 2000,00 foi aplicado a juros compostos de 10% ao mês durante 3 meses. O montante ao final da aplicação é:
+<div class="alt"><span>(A) R$ 2600,00</span><span>(B) R$ 2620,00</span><span>(C) R$ 2662,00</span><br><span>(D) R$ 2700,00</span><span>(E) R$ 2800,00</span></div></div>
+
+<div class="q"><span class="n">15. (Inédita – simples × compostos)</span> Marcos aplicou R$ 5000,00 a 4% ao mês por 2 meses. A diferença entre o montante obtido a juros compostos e o obtido a juros simples é de:
+<div class="alt"><span>(A) R$ 0,00</span><span>(B) R$ 4,00</span><span>(C) R$ 8,00</span><br><span>(D) R$ 16,00</span><span>(E) R$ 40,00</span></div></div>
+
+<div class="q"><span class="n">16. (Inédita – lucro)</span> Um comerciante da Feira do Produtor compra uma caixa de frutas por R$ 80,00 e quer vendê-la com lucro de 25% sobre o preço de custo. O preço de venda deve ser:
+<div class="alt"><span>(A) R$ 90,00</span><span>(B) R$ 95,00</span><span>(C) R$ 100,00</span><br><span>(D) R$ 105,00</span><span>(E) R$ 120,00</span></div></div>
+
+<div class="q"><span class="n">17. (Inédita – prejuízo)</span> Uma bicicleta foi vendida por R$ 360,00, com prejuízo de 10% sobre o preço de custo. Quanto ela havia custado?
+<div class="alt"><span>(A) R$ 324,00</span><span>(B) R$ 370,00</span><span>(C) R$ 396,00</span><br><span>(D) R$ 400,00</span><span>(E) R$ 450,00</span></div></div>
+
+<div class="q"><span class="n">18. (Inédita – descontos sucessivos)</span> Uma loja dá um desconto de 20% em um produto e, no caixa, mais 10% sobre o novo preço. O desconto total equivale a:
+<div class="alt"><span>(A) 30%</span><span>(B) 28%</span><span>(C) 25%</span><br><span>(D) 20%</span><span>(E) 18%</span></div></div>
+
+<div class="q"><span class="n">19. (Inédita – aumento e desconto)</span> Um tênis de R$ 250,00 teve aumento de 20%. Um mês depois, entrou em promoção com desconto de 20% sobre o novo preço. O preço na promoção é:
+<div class="alt"><span>(A) R$ 250,00</span><span>(B) R$ 245,00</span><span>(C) R$ 240,00</span><br><span>(D) R$ 230,00</span><span>(E) R$ 200,00</span></div></div>
+
+<div class="q"><span class="n">20. (Inédita – ponto de equilíbrio)</span> Uma lanchonete tem um custo fixo diário de R$ 120,00 e gasta R$ 3,00 para produzir cada sanduíche, que é vendido por R$ 7,00. Quantos sanduíches ela precisa vender por dia para não ter lucro nem prejuízo?
+<div class="alt"><span>(A) 17</span><span>(B) 24</span><span>(C) 30</span><br><span>(D) 40</span><span>(E) 50</span></div></div>
+
+<!-- GABARITO -->
+<h2 class="quebra">11. Gabarito Comentado</h2>
+<div class="gab">
+<p><b>1 – A.</b> J = 800 · 0,02 · 8 = 128, então M = 800 + 128 = R$ 928,00.</p>
+<p><b>2 – C.</b> Em setembro, 120 · 1,05 = 126,00. Em outubro, 126 · 1,05 = R$ 132,30. Direto: 120 · 1,05² = 120 · 1,1025.</p>
+<p><b>3 – E.</b> 0,97 = 1 − 0,03, que corresponde a um desconto de 3%.</p>
+<p><b>4 – C.</b> 350 · 0,0234 = R$ 8,19.</p>
+<p><b>5 – A.</b> (23 059 − 17 692) / 17 692 = 5367 / 17 692 ≈ 0,303, ou seja, 30,3%.</p>
+<p><b>6 – B.</b> Há 1920 − 364 = 1556 brasileiros, e 1556 / 1920 ≈ 0,81, ou seja, ≈ 81%. A alternativa mais próxima é 80%.</p>
+<p><b>7 – B.</b> 850 + 0,05 · 24 000 = 850 + 1200 = R$ 2050,00.</p>
+<p><b>8 – C.</b> 980 + 0,08 · 48 000 = 980 + 3840 = R$ 4820,00.</p>
+<p><b>9 – C.</b> 5 + 1,75x = 110, então 1,75x = 105 e x = 60 km.</p>
+<p><b>10 – C.</b> O volume é 5 · 4 · 10 = 200 cm³. O frete custa 200 · 21 = 4200 dólares, e 4200 · 5,6 = R$ 23 520.</p>
+<p><b>11 – C.</b> Os inversos 1/6, 1/8 e 1/12, multiplicados por 24, viram 4, 3 e 2, que somam 9. Bruno recebe 3/9 · 1200 = R$ 400,00.</p>
+<p><b>12 – C.</b> Seja x o valor do segundo. Como 1,8333... = 11/6, a soma é 11x/6 + x + x + x/2 + (x/2 + 13) = 100. Isso dá 29x/6 = 87, e x = R$ 18,00.</p>
+<p><b>13 – C.</b> M = C·(1 + 0,025 · 8) = 1,2C. De 1,2C = 2400 sai C = R$ 2000,00.</p>
+<p><b>14 – C.</b> Mês a mês: 2000 → 2200 → 2420 → 2662. Pela fórmula, 2000 · 1,1³ = 2000 · 1,331 = R$ 2662,00.</p>
+<p><b>15 – C.</b> Nos juros simples, 5000 · (1 + 0,08) = 5400. Nos compostos, 5000 · 1,04² = 5000 · 1,0816 = 5408. A diferença é R$ 8,00.</p>
+<p><b>16 – C.</b> V = 80 · 1,25 = R$ 100,00.</p>
+<p><b>17 – D.</b> 360 = C · 0,90, então C = R$ 400,00.</p>
+<p><b>18 – B.</b> 0,80 · 0,90 = 0,72. O preço final é 72% do original, um desconto de 28%.</p>
+<p><b>19 – C.</b> 250 · 1,2 · 0,8 = 250 · 0,96 = R$ 240,00. O preço final é menor que o inicial.</p>
+<p><b>20 – C.</b> A receita é 7x e o custo é 120 + 3x. Igualando, 7x = 120 + 3x, então 4x = 120 e x = 30 sanduíches.</p>
+</div>
+
+<p class="cai" style="margin-top:18pt">Fonte das questões 1 a 12: provas de Matemática do Processo Seletivo CME-PMRR (Colégio Militar Estadual – Roraima), ingresso na 1ª série do Ensino Médio, 2016 a 2026. As questões 13 a 20 foram elaboradas para esta apostila.</p>
+
+</body>
+</html>
